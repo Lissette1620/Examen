@@ -54,6 +54,7 @@ public class Controlador_FRM_VentanaPrincipal implements ActionListener{
         if(metodosBiblioteca.consultar(frm_VentanaPrincipal.agregarNumeroPrestamo()))
         {
            frm_VentanaPrincipal.mostrarInformacion(metodosBiblioteca.informacionArreglo());
+           frm_VentanaPrincipal.devolverInformacion();
            frm_VentanaPrincipal.resetearGUI(); 
         } 
         else
