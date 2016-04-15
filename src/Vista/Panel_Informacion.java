@@ -53,11 +53,13 @@ public class Panel_Informacion extends javax.swing.JPanel {
         this.jt_CodigoLibro.setEnabled(false);
                           
     }
-    public void mostrarInformacion(String arreglo[])
+    public void mostrarInformacion(String info[])
     {
-        this.jt_NombreUsuario.setText(arreglo[0]);
-        this.jt_CedulaUsuario.setText(arreglo[1]);
-        this.jt_CodigoLibro.setText(arreglo[2]);
+        info[0]=this.jt_NombreUsuario.getText();
+        info[1]=this.jt_CedulaUsuario.getText();
+        info[2]=this.jt_CodigoLibro.getText();
+      
+        
     }
     public void habilitarEdicion()
     {
