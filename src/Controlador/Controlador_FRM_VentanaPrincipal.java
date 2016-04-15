@@ -27,6 +27,7 @@ public class Controlador_FRM_VentanaPrincipal implements ActionListener{
     {
         if(e.getActionCommand().equals(("Agregar")))
         {
+           
            metodosBiblioteca.agregar(frm_VentanaPrincipal.devolverInformacion());
            frm_VentanaPrincipal.mensage("Agregado con Éxito");
            frm_VentanaPrincipal.resetearGUI();

@@ -32,10 +32,10 @@ public class Panel_Informacion extends javax.swing.JPanel {
     public String[] devolverInformacion()
     {
         String informacion[]=new String[4];
-        informacion[1]=this.jt_NumeroPrestamo.getText();
-        informacion[2]=this.jt_NombreUsuario.getText();
-        informacion[3]=this.jt_CedulaUsuario.getText();
-        informacion[4]=this.jt_CodigoLibro.getText();
+        informacion[0]=this.jt_NumeroPrestamo.getText();
+        informacion[1]=this.jt_NombreUsuario.getText();
+        informacion[2]=this.jt_CedulaUsuario.getText();
+        informacion[3]=this.jt_CodigoLibro.getText();
         return informacion;
     }
     public void deshabilitarCampos()
@@ -55,9 +55,9 @@ public class Panel_Informacion extends javax.swing.JPanel {
     }
     public void mostrarInformacion(String arreglo[])
     {
-        this.jt_NombreUsuario.setText(arreglo[1]);
-        this.jt_CedulaUsuario.setText(arreglo[2]);
-        this.jt_CodigoLibro.setText(arreglo[3]);
+        this.jt_NombreUsuario.setText(arreglo[0]);
+        this.jt_CedulaUsuario.setText(arreglo[1]);
+        this.jt_CodigoLibro.setText(arreglo[2]);
     }
     public void habilitarEdicion()
     {
